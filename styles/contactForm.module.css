@@ -1,0 +1,287 @@
+.contactForm {
+  height: 80vh;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: relative;
+  margin-top: 10rem;
+}
+
+.container {
+  border: solid 3px #474544;
+  width: 90%;
+  height: 90%;
+  padding: 2rem;
+  color: white;
+  /* margin: 2rem; */
+  position: relative;
+  background-color: rgb(17, 8, 10);
+  border-radius: 10px;
+  float: left;
+  box-shadow: rgba(28, 203, 212, 0.4) 0px 1px 11px,
+    rgba(28, 203, 212, 0.2) 0px 10px 10px;
+}
+
+.avatarDiv {
+  position: absolute;
+  bottom: 0;
+  width: 30%;
+  margin-right: 1rem;
+  left: 5%;
+  /* height: 39%; */
+}
+
+.avatarForm {
+  display: flex;
+}
+
+.formH2 {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  position: absolute;
+  right: 0;
+  font-family: "Alegreya Sans SC";
+  font-weight: 900;
+}
+
+.formH2Heading {
+  color: white;
+  /* font-size: 4rem; */
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: capitalize;
+  margin: 1rem;
+}
+
+.name {
+  color: white;
+  float: left;
+  width: 45%;
+}
+
+.email {
+  float: right;
+  width: 45%;
+}
+
+.inputGroup {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.input {
+  background: none;
+  border: none;
+  border-bottom: solid 2px #474544;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0em 0 1.875em 0;
+  padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+.input:focus {
+  outline: none;
+  padding: 0 0 0.875em 0;
+}
+
+.select {
+  background: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png")
+    no-repeat right;
+  outline: none;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 2px #474544;
+  color: white;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  padding: 0 0 0.875em 0;
+  margin: 0em 0 1.875em 0;
+  text-transform: uppercase;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+.select:focus {
+  outline: none;
+}
+
+.textarea {
+  background: none;
+  border: none;
+  border-bottom: solid 2px #474544;
+  color: white;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  padding: 0 0 0.875em 0;
+  margin: 0em 0 1.875em 0;
+  resize: none;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s;
+  line-height: 150%;
+  height: 150px;
+  text-transform: uppercase;
+}
+
+.textarea:focus {
+  outline: none;
+}
+
+.message {
+  float: none;
+  color: white;
+}
+
+.formButton {
+  background: none;
+  color: white;
+  border: solid 0.5px var(--accent);
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Alegreya Sans SC", monospace;
+  font-size: 1.4rem;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.formButton:hover {
+  background: #474544;
+  color: #f2f3eb;
+}
+
+.submit {
+  display: flex;
+  gap: 8rem;
+}
+
+.subject {
+  width: 100%;
+  color: white;
+}
+
+.telephone {
+  width: 100%;
+  color: white;
+}
+
+/* select::-ms-expand {
+    display: none;
+  } */
+
+.textarea {
+  line-height: 150%;
+  height: 150px;
+  resize: none;
+  width: 100%;
+  color: white;
+}
+
+.input::-webkit-input-placeholder {
+  color: white;
+}
+
+.input:-moz-placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.input::-moz-placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.input:-ms-input-placeholder {
+  color: white;
+}
+
+.formButton {
+  background: none;
+  color: white;
+  border: solid 0.5px var(--accent);
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Alegreya Sans SC", monospace;
+  font-size: 1.4rem;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.formButton:hover {
+  background: #474544;
+  color: #f2f3eb;
+}
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  .container {
+    /* background-color: red; */
+    height: 75%;
+  }
+  .contactForm {
+    width: 95%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    /* background-color: red; */
+    height: 100%;
+  }
+  .contactForm {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 481px) {
+  .avatarDiv {
+    display: none;
+  }
+  .formH2 {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .email,
+  .name,
+  .telephone,
+  .subject,
+  .select,
+  .textarea {
+    font-size: 1rem;
+  }
+  .contactForm {
+    height: 130vh;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    margin-top: 5rem;
+  }
+  .contactForm {
+    margin: auto;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    /* margin: 1rem; */
+  }
+}
